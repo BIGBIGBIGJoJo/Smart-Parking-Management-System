@@ -1,0 +1,21 @@
+addParking -member_C 2025-05-10 10:00 7.0;
+addEvent -member_A 2025-05-12 11:00 8.0 locker umbrella;
+addReservation -member_D 2025-05-11 07:00 9.0 battery cable;
+addReservation -member_D 2025-05-16 19:00 5.0 battery cable;
+addParking -member_E 2025-05-13 02:00 10.0 battery cable;
+addParking -member_A 2025-05-16 22:00 3.0;
+addEvent -member_E 2025-05-14 02:00 12.0 locker umbrella;
+addReservation -member_A 2025-05-13 04:00 4.0 battery cable;
+addReservation -member_E 2025-05-10 00:00 1.0 battery cable;
+addParking -member_B 2025-05-13 05:00 2.0;
+addReservation -member_C 2025-05-13 07:00 6.0 battery cable;
+addReservation -member_C 2025-05-15 17:00 7.0 locker umbrella;
+addEvent -member_D 2025-05-10 20:00 7.0 locker umbrella;
+addParking -member_C 2025-05-11 18:00 9.0;
+
+printBookings -fcfs;
+printBookings -prio;
+printBookings -opti;
+bookEssentials -member_E 2025-05-15 00:00 11.0 cable;
+addBatch -SPMSBatch.dat;
+printBookings -ALL;
